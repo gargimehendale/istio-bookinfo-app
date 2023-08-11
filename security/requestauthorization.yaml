@@ -1,0 +1,8 @@
+apiVersion: security.istio.io/v1beta1
+kind: RequestAuthentication
+metadata:
+  name: "auth0"
+spec:
+  jwtRules:
+  - issuer: "https://dev-kcfug7811nox3dgq.us.auth0.com/"
+    jwksUri: "https://dev-kcfug7811nox3dgq.us.auth0.com/.well-known/jwks.json"
